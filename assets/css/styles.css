@@ -82,9 +82,20 @@ button {
 }
 
 .section__title-tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: #696d77;
     font-weight: 400;
     line-height: 2.8rem; /* 175% */
+}
+
+.section__title-tag::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
 }
 
 /* TOP-HEADER */
@@ -153,3 +164,119 @@ button {
 }
 
 /* HERO */
+
+.hero {
+    height: calc(100vh - 109px);
+}
+
+.hero__content {
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__info-block {
+    width: 540px;
+}
+
+.hero__title {
+    margin-top: 12px;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7rem; /* 116.667% */
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: var(--secondary-font-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero__form {
+    margin-top: 40px;
+    padding: 8px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.hero-form__input::placeholder {
+    color: var(--secondary-font-color);
+    font-weight: 400;
+    line-height: 2.8rem; /* 175% */
+}
+
+.hero-form__submit {
+    flex-shrink: 0;
+    border: none;
+}
+
+.hero-form__notice {
+    margin-top: 20px;
+    color: var(--secondary-font-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem; /* 171.429% */
+}
+
+.hero__img-block {
+    position: relative;
+    display: flex;
+    width: 470px;
+}
+
+.hero__img-decor1 {
+    position: absolute;
+    top: 127px;
+    left: 340px;
+}
+
+.hero__img-decor2 {
+    position: absolute;
+    bottom: 61px;
+    left: 246px;
+}
+
+.hero__img-decor3 {
+    position: absolute;
+    left: -100px;
+    top: 113px;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__decor3-text {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4rem; /* 100% */
+}
+
+.hero__decor3-price {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem; /* 100% */
+}
