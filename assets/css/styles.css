@@ -187,6 +187,10 @@ button {
     line-height: 7rem; /* 116.667% */
 }
 
+.hero__title--important {
+    color: #7264d6;
+}
+
 .hero__desc {
     margin-top: 20px;
     color: var(--secondary-font-color);
@@ -279,4 +283,344 @@ button {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.4rem; /* 100% */
+}
+
+/* WORK */
+
+.work {
+    padding: 80px 0;
+}
+
+.work__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work__img-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 470px;
+}
+
+.work__img {
+    position: relative;
+}
+
+.work__img-bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.work__img-decor1 {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+}
+
+.work__img-decor2 {
+    position: absolute;
+    bottom: 96px;
+    left: 344px;
+    padding: 15px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work__decor2-info--upper {
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work__decor2-info--lower {
+    margin-top: 5px;
+    color: var(--secondary-font-color);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work__title {
+    margin-top: 12px;
+}
+
+.work__list {
+    margin-top: 70px;
+}
+
+.work__item {
+    width: 470px;
+}
+
+.work__item + .work__item {
+    margin-top: 30px;
+}
+
+.work__item-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.2rem; /* 145.455% */
+}
+
+.work__item-desc {
+    color: var(--secondary-font-color);
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 2.8rem; /* 175% */
+}
+
+/* FEATURE 1 + 2 */
+
+.feature {
+    padding: 80px 0;
+}
+
+.feature__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature__info-block {
+    width: 470px;
+}
+
+.feature__title {
+    margin-top: 12px;
+}
+
+.feature__desc {
+    margin-top: 20px;
+}
+
+.feature__list {
+    margin-top: 28px;
+}
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+
+.feature__item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 99px;
+    background: var(--primary-color);
+}
+
+.feature__item + .feature__item {
+    margin-top: 18px;
+}
+
+.feature__btn {
+    margin-top: 38px;
+    background-color: var(--primary-font-color);
+}
+
+.feature1__img-block {
+    position: relative;
+    width: min-content;
+    padding-right: 88px;
+}
+
+.feature1__img-decor1 {
+    position: absolute;
+    top: -72px;
+    right: -38px;
+}
+
+.feature1__img-decor2 {
+    position: absolute;
+    bottom: -55px;
+    right: 0px;
+}
+
+.feature2__img-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 470px;
+}
+
+.feature2__img-bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.feature2__img-decor-bonus {
+    position: absolute;
+    top: -35px;
+    right: -26px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 50%;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.feature2__img-decor {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    height: min-content;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 9px;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.feature2__img-decor-text {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+
+.feature2__img-decor-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 18px;
+}
+
+/* REVIEW */
+
+.review {
+    padding: 80px 0;
+}
+
+.review__title-tag,
+.review__desc {
+    display: inline-flex;
+}
+
+.review__content {
+    text-align: center;
+}
+
+.review__title {
+    margin-top: 12px;
+}
+
+.review__desc {
+    margin-top: 18px;
+    margin-bottom: 70px;
+    max-width: 435px;
+}
+
+.review__all-review {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.review__list {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.review__item {
+    position: relative;
+}
+
+.review-item__img-wrapper {
+    margin-top: 96px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.review-item__img-wrapper1 {
+    background: #4ab5e3;
+}
+.review-item__img-wrapper2 {
+    background: #439f90;
+}
+
+.review-item__text {
+    position: relative;
+    padding: 42px 28px;
+    color: var(--secondary-font-color);
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 3.4rem; /* 154.545% */
+}
+
+.review-item__text::before .review-item__author {
+    margin-top: 20px;
+    color: #070052;
+    font-family: "Open Sans";
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.6rem; /* 138.462% */
+}
+
+.review-item__job {
+    margin-top: 2px;
+    color: var(--secondary-font-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem; /* 166.667% */
+}
+
+.review-item__text-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    color: #dfe2e8;
+}
+
+.review__item:hover .review-item__text-bg {
+    color: #ffffff;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.review__pages {
+    margin-top: 38px;
+    display: inline-flex;
+    gap: 12px;
+}
+
+.review__page {
+    height: 6px;
+    width: 20px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+}
+
+.review__page--current {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
 }
