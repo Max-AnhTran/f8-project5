@@ -7,6 +7,23 @@
     <title>F8 Project 05</title>
 
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -20,6 +37,9 @@
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,9 +91,9 @@
 
                 <figure class="hero__img-block">
                     <img src="./assets/img/hero-phone.svg" alt="" class="hero__img">
-                    <img src="./assets/img/hero-decor1.svg" alt="" class="hero__img-decor1">
-                    <img src="./assets/img/hero-decor2.svg" alt="" class="hero__img-decor2">
-                    <div class="hero__img-decor3">
+                    <img src="./assets/img/hero-decor1.svg" alt="" class="hero__img-decor1" data-aos="fade-left">
+                    <img src="./assets/img/hero-decor2.svg" alt="" class="hero__img-decor2" data-aos="fade-left">
+                    <div class="hero__img-decor3"data-aos="fade-right">
                         <img src="./assets/img/hero-decor3.svg" alt="">
                         <span class="hero__decor3-text">Deposite</span>
                         <span class="hero__decor3-price">$32000</span>
@@ -85,10 +105,10 @@
         <section class="work" id="products">
             <div class="content work__content">
                 <figure class="work__img-block">
-                    <img src="./assets/img/work.png" alt="" class="work__img">
-                    <img src="./assets/img/work-bg.svg" alt="" class="work__img-bg">
-                    <img src="./assets/img/work-decor.svg" alt="" class="work__img-decor1">
-                    <div class="work__img-decor2">
+                    <img src="./assets/img/work.png" alt="" class="work__img" data-aos="zoom-in">
+                    <img src="./assets/img/work-bg.svg" alt="" class="work__img-bg" data-aos="zoom-in">
+                    <img src="./assets/img/work-decor.svg" alt="" class="work__img-decor1" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="work__img-decor2" data-aos="fade-left" data-aos-delay="500">
                         <img src="./assets/img/work-decor+.svg" alt="">
                         <div class="work__decor2-info">
                             <p class="work__decor2-info--upper">Congratulations</p>
@@ -140,9 +160,9 @@
                     </div>
 
                     <figure class="feature1__img-block">
-                        <img src="./assets/img/feature1.svg" alt="" class="feature1__img">
-                        <img src="./assets/img/feature1-decor1.svg" alt="" class="feature1__img-decor1">
-                        <img src="./assets/img/feature1-decor2.svg" alt="" class="feature1__img-decor2">
+                        <img src="./assets/img/feature1.svg" alt="" class="feature1__img" data-aos="fade-left">
+                        <img src="./assets/img/feature1-decor1.svg" alt="" class="feature1__img-decor1" data-aos="fade-left" data-aos-delay="600">
+                        <img src="./assets/img/feature1-decor2.svg" alt="" class="feature1__img-decor2" data-aos="fade-left" data-aos-delay="300">
                     </figure>
                 </div>
             </section>
@@ -150,9 +170,9 @@
             <section class="feature feature2">
                 <div class="content feature__content">
                     <figure class="feature2__img-block">
-                        <img src="./assets/img/feature2.png" alt="" class="feature2__img">
-                        <img src="./assets/img/feature2-bg.svg" alt="" class="feature2__img-bg">
-                        <div class="feature2__img-decor">
+                        <img src="./assets/img/feature2.png" alt="" class="feature2__img" data-aos="fade-right">
+                        <img src="./assets/img/feature2-bg.svg" alt="" class="feature2__img-bg" data-aos="fade-right">
+                        <div class="feature2__img-decor" data-aos="fade-left">
                             <p class="feature2__img-decor-text">Choose payment method:</p>
                             <div class="feature2__img-decor-grid">
                                 <img src="./assets/img/Group 2704.svg" alt="" class="feature2__img-decor-item">
@@ -462,6 +482,10 @@
         <div class="footer__copyright">© 2020 Ligft Media All rights reserved.</div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
